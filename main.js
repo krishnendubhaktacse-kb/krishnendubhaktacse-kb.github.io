@@ -166,11 +166,11 @@ if (
 
         strings: [
             "AI Engineer",
-            "Generative AI Engineer",
+            "Generative AI Developer",
             "Python Developer",
             "Full Stack Developer",
-            "Machine Learning Enthusiast",
-            "Computer Vision Enthusiast"
+            "Data Analyst",
+            "Computer Vision Developer"
         ],
 
         typeSpeed: 70,
