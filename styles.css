@@ -1270,8 +1270,9 @@ span{
 
 .ai-assistant-button{
     position: fixed;
-    left: 2.5rem;
+    left: 50%;
     bottom: 2.5rem;
+    transform: translateX(-50%);
 
     width: 6.5rem;
     height: 6.5rem;
@@ -1309,7 +1310,7 @@ span{
 }
 
 .ai-assistant-button:hover{
-    transform: scale(1.1);
+    transform: translateX(-50%) scale(1.1);
 
     box-shadow:
         0 0 20px var(--main-color),
@@ -1345,9 +1346,10 @@ span{
 
 @media (max-width: 480px){
 
-    .ai-assistant-button{
-        left: 1.5rem;
+     .ai-assistant-button{
+        left: 50%;
         bottom: 1.5rem;
+
 
         width: 5.8rem;
         height: 5.8rem;
@@ -1357,6 +1359,10 @@ span{
 
     .ai-assistant-button i{
         font-size: 2.3rem;
+    }
+
+    .ai-assistant-button:hover{
+        transform: translateX(-50%) scale(1.08);
     }
 
 }
