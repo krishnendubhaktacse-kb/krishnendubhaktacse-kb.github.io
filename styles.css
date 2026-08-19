@@ -309,13 +309,13 @@ span{
 }
 
 .certificates{
-    background: var(--snd-bf-color);
+    background: var(--bg-color);
 }
 
 
 
 .portfolio{
-    background: var(--bg-color);
+    background: var(--snd-bf-color);
 }
 
 .portfolio h2{
@@ -397,7 +397,7 @@ span{
 }
 
 .contact{
-    background: var(--snd-bf-color);
+    background: var(--bg-color);
 }
 
 .contact form{
@@ -445,7 +445,7 @@ span{
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    background: var(--snd-bf-color);
 }
 
 .footer-text{
@@ -929,4 +929,337 @@ span{
         padding:.7rem 1.2rem;
     }
 
+}
+
+/*======================
+      Experience
+=======================*/
+
+.experience{
+    background: var(--snd-bf-color);
+}
+
+.experience h2{
+    margin-bottom: 5rem;
+}
+
+.experience-container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.experience-card{
+    position: relative;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(89,178,244,.25);
+    border-radius: 2rem;
+    padding: 3.5rem;
+    backdrop-filter: blur(12px);
+    transition: .4s ease;
+    overflow: hidden;
+}
+
+
+.experience-card:hover{
+    transform: translateY(-8px);
+    border-color: var(--main-color);
+    box-shadow:
+        0 0 20px rgba(89,178,244,.35),
+        0 0 45px rgba(89,178,244,.15);
+}
+
+
+/* Experience Header */
+
+.experience-header{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.experience-icon{
+    width: 7rem;
+    height: 7rem;
+    min-width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(89,178,244,.1);
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 20px rgba(89,178,244,.25);
+}
+
+.experience-icon i{
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+.experience-title h3{
+    font-size: 2.8rem;
+    color: var(--main-color);
+    margin-bottom: .7rem;
+}
+
+.experience-title h4{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.experience-title p{
+    font-size: 1.5rem;
+    color: rgba(255,255,255,.75);
+}
+
+.experience-title p i{
+    color: var(--main-color);
+    margin-right: .5rem;
+}
+
+.experience-title p span{
+    color: var(--main-color);
+    margin: 0 .8rem;
+}
+
+
+/* Divider */
+
+.experience-divider{
+    width: 100%;
+    height: 1px;
+    background: rgba(255,255,255,.1);
+    margin: 2.5rem 0;
+}
+
+
+/* Description */
+
+.experience-description{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    color: rgba(255,255,255,.9);
+}
+
+
+/* Experience Skills */
+
+.experience-skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.experience-skills span{
+    padding: .8rem 1.5rem;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(89,178,244,.25);
+    border-radius: 50px;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    transition: .35s ease;
+}
+
+.experience-skills span:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    border-color: var(--main-color);
+    transform: translateY(-4px);
+    box-shadow: 0 0 15px rgba(89,178,244,.5);
+}
+
+
+/* Internship Project */
+
+.experience-project{
+    margin-top: 3rem;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    background: rgba(89,178,244,.05);
+    border: 1px solid rgba(89,178,244,.2);
+}
+
+.experience-project h3{
+    font-size: 2.2rem;
+    color: var(--main-color);
+    margin-bottom: 1.2rem;
+}
+
+.experience-project h3 i{
+    margin-right: .7rem;
+}
+
+.experience-project p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,.85);
+}
+
+
+/* Experience Footer */
+
+.experience-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.certificate-id{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    font-size: 1.5rem;
+}
+
+.certificate-id i{
+    color: var(--main-color);
+    font-size: 1.8rem;
+}
+
+.certificate-id strong{
+    color: var(--main-color);
+}
+
+
+/* Certificate Button */
+
+.experience-footer .btn{
+    display: inline-flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+
+/*======================
+      Experience Mobile
+=======================*/
+
+@media (max-width: 768px){
+
+    .experience h2{
+        margin-bottom: 3rem;
+    }
+
+    .experience-container{
+        width: 100%;
+    }
+
+    .experience-card{
+        padding: 2.5rem 2rem;
+    }
+
+    .experience-header{
+        align-items: flex-start;
+    }
+
+    .experience-icon{
+        width: 5.5rem;
+        height: 5.5rem;
+        min-width: 5.5rem;
+    }
+
+    .experience-icon i{
+        font-size: 2.3rem;
+    }
+
+    .experience-title h3{
+        font-size: 2.2rem;
+    }
+
+    .experience-title h4{
+        font-size: 1.6rem;
+    }
+
+    .experience-title p{
+        font-size: 1.3rem;
+        line-height: 1.7;
+    }
+
+    .experience-project{
+        padding: 2rem;
+    }
+
+    .experience-footer{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .experience-footer .btn{
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+
+/* Small Mobile */
+
+@media (max-width: 480px){
+
+    .experience-card{
+        padding: 2rem 1.5rem;
+    }
+
+    .experience-header{
+        gap: 1.2rem;
+    }
+
+    .experience-icon{
+        width: 5rem;
+        height: 5rem;
+        min-width: 5rem;
+    }
+
+    .experience-icon i{
+        font-size: 2rem;
+    }
+
+    .experience-title h3{
+        font-size: 1.9rem;
+    }
+
+    .experience-title h4{
+        font-size: 1.4rem;
+    }
+
+    .experience-description{
+        font-size: 1.5rem;
+    }
+
+    .experience-skills span{
+        font-size: 1.2rem;
+        padding: .7rem 1.2rem;
+    }
+
+    .experience-project h3{
+        font-size: 1.8rem;
+    }
+
+    .experience-project p{
+        font-size: 1.4rem;
+    }
+
+    .certificate-id{
+        font-size: 1.3rem;
+    }
+
+}
+
+/* BharatCares Company Logo */
+
+.experience-icon.company-logo{
+    background: #ffffff;
+    overflow: hidden;
+    padding: .8rem;
+}
+
+.experience-icon.company-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
 }
