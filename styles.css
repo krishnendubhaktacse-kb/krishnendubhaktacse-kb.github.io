@@ -1270,9 +1270,8 @@ span{
 
 .ai-assistant-button{
     position: fixed;
-    left: 50%;
+    left: 2.5rem;
     bottom: 2.5rem;
-    transform: translateX(-50%);
 
     width: 6.5rem;
     height: 6.5rem;
@@ -1310,14 +1309,13 @@ span{
 }
 
 .ai-assistant-button:hover{
-    transform: translateX(-50%) scale(1.1);
+    transform: scale(1.1);
 
     box-shadow:
         0 0 20px var(--main-color),
         0 0 40px var(--main-color),
         0 0 70px rgba(89,178,244,.5);
 }
-
 
 /* AI Glow Animation */
 
@@ -1346,10 +1344,9 @@ span{
 
 @media (max-width: 480px){
 
-     .ai-assistant-button{
-        left: 50%;
+    .ai-assistant-button{
+        left: 1.5rem;
         bottom: 1.5rem;
-
 
         width: 5.8rem;
         height: 5.8rem;
@@ -1357,12 +1354,13 @@ span{
         border-radius: 50%;
     }
 
-    .ai-assistant-button i{
-        font-size: 2.3rem;
+    .ai-assistant-button:hover{
+        transform: scale(1.08);
     }
 
-    .ai-assistant-button:hover{
-        transform: translateX(-50%) scale(1.08);
+
+    .ai-assistant-button i{
+        font-size: 2.3rem;
     }
 
 }
@@ -2080,3 +2078,14 @@ span{
 
 }
 
+@media (max-width: 768px) {
+    .footer {
+        justify-content: center;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .footer-iconTop {
+        margin: 0;
+    }
+}
