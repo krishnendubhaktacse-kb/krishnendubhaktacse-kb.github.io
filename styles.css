@@ -1520,17 +1520,24 @@ span{
     min-width: 3rem;
     width: 3rem;
     height: 3rem;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     border-radius: 50%;
-    background: rgba(89,178,244,.15);
-    border: 1px solid rgba(89,178,244,.3);
-    color: var(--main-color);
+
+    background: var(--main-color);
+    color: var(--bg-color);
+
+    border: none;
+
+    box-shadow: 0 0 10px rgba(89,178,244,.4);
 }
 
 .ai-message-avatar i{
     font-size: 1.3rem;
+    color: var(--bg-color);
 }
 
 .ai-message-content{

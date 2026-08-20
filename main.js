@@ -1259,56 +1259,62 @@ function createAllSkillsResponse() {
 
 
             <p>
-                <strong>🤖 AI Engineering</strong>
+                <strong>
+                    🤖 <span style="color: var(--main-color);">AI Engineering</span>
+                </strong>
                 <br>
 
                 ${createList(
                     skills.aiEngineering,
                     "•"
                 )}
-
             </p>
 
 
             <p>
-                <strong>💻 Full Stack Development</strong>
+                <strong>
+                    💻 <span style="color: var(--main-color);">Full Stack Development</span>
+                </strong>
                 <br>
 
                 ${createList(
                     skills.fullStack,
                     "•"
                 )}
-
             </p>
 
 
             <p>
-                <strong>📊 Data Analytics</strong>
+                <strong>
+                    📊 <span style="color: var(--main-color);">Data Analytics</span>
+                </strong>
                 <br>
 
                 ${createList(
                     skills.dataAnalytics,
                     "•"
                 )}
-
             </p>
 
 
             <p>
-                <strong>⚙️ Tools & Platforms</strong>
+                <strong>
+                    ⚙️ <span style="color: var(--main-color);">Tools & Platforms</span>
+                </strong>
                 <br>
 
                 ${createList(
                     skills.tools,
                     "•"
                 )}
-
             </p>
 
 
             <p>
                 <strong>
-                    Total unique skills:
+                    <span style="color: var(--main-color);">
+                        Total unique skills:
+                    </span>
                     ${getUniqueSkills().length}
                 </strong>
             </p>
