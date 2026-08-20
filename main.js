@@ -2178,19 +2178,29 @@ if (
             message: `
 
                 <p>
-                    🧠 <strong>What Krishnendu Learned During His Internship</strong>
+                    🧠
+                    <strong style="color: var(--main-color);">
+                        What Krishnendu Learned During His Internship
+                    </strong>
                 </p>
 
                 <p>
                     During his
-                    <strong>6-week AI Automation & Intelligent Solutions Internship</strong>
-                    at <strong>BharatCares®</strong>,
+                    <strong style="color: var(--main-color);">
+                        6-week AI Automation & Intelligent Solutions Internship
+                    </strong>
+                    at
+                    <strong style="color: var(--main-color);">
+                        BharatCares®
+                    </strong>,
                     Krishnendu gained practical exposure to
                     modern AI technologies and intelligent solutions.
                 </p>
 
                 <p>
-                    <strong>📚 Key Learning Areas:</strong>
+                    <strong style="color: var(--main-color);">
+                        📚 Key Learning Areas:
+                    </strong>
                     <br>
 
                     ${createList(
@@ -2201,7 +2211,9 @@ if (
                 </p>
 
                 <p>
-                    <strong>💡 Practical Learning:</strong>
+                    <strong style="color: var(--main-color);">
+                        💡 Practical Learning:
+                    </strong>
                     <br>
 
                     • Understanding how Generative AI can be applied
@@ -2230,9 +2242,12 @@ if (
                 </p>
 
                 <p>
-                    🎯 This internship helped him strengthen his
-                    understanding of Generative AI, automation,
-                    intelligent applications, and practical AI problem solving.
+                    🎯
+                    <strong style="color: var(--main-color);">
+                        This internship helped him strengthen his
+                        understanding of Generative AI, automation,
+                        intelligent applications, and practical AI problem solving.
+                    </strong>
                 </p>
 
             `,
@@ -2278,120 +2293,142 @@ if (
     }
 
 
-    /* =====================================================
-       EXPERIENCE
-    ===================================================== */
+/* =====================================================
+   EXPERIENCE
+===================================================== */
 
-    if (
+if (
 
-        q.includes("experience") ||
-        q.includes("internship") ||
-        q.includes("intern") ||
-        q.includes("bharatcares") ||
-        q.includes("work experience")
+    q.includes("experience") ||
+    q.includes("internship") ||
+    q.includes("intern") ||
+    q.includes("bharatcares") ||
+    q.includes("work experience")
 
-    ) {
+) {
 
-        const internship =
-            portfolioKnowledge
-                .experience
-                .bharatcares;
-
-
-        return {
-
-            message: `
-
-                <p>
-                    💼 Krishnendu completed a
-                    <strong>
-                        ${internship.durationText}
-                    </strong>
-                    at
-                    <strong>
-                        ${internship.company}
-                    </strong>.
-                </p>
-
-                <p>
-                    <strong>Role:</strong><br>
-                    ${internship.role}
-                </p>
-
-                <p>
-                    <strong>Duration:</strong><br>
-                    ${internship.duration}
-                </p>
-
-                <p>
-                    <strong>Organization:</strong><br>
-                    ${internship.organization}
-                </p>
-
-                <p>
-                    <strong>Key Learning Areas:</strong><br>
-                    ${createList(
-                        internship.technologies,
-                        "•"
-                    )}
-                </p>
-
-                <p>
-                    <strong>Certificate ID:</strong>
-                    ${internship.certificateId}
-                </p>
-
-                <div class="ai-project-links">
-
-                    <a
-                        href="${internship.certificateUrl}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="ai-project-link"
-                    >
-
-                        <i class="fas fa-award"></i>
-
-                        View Certificate
-
-                    </a>
-
-                </div>
-
-            `,
-
-            options: [
-
-                {
-                    text:
-                        "🧠 What did Krishnendu learn during his internship?",
-
-                    icon:
-                        "fas fa-brain"
-                },
+    const internship =
+        portfolioKnowledge
+            .experience
+            .bharatcares;
 
 
-                {
-                    text:
-                        "🚀 What projects has Krishnendu built?",
+    return {
 
-                    icon:
-                        "fas fa-rocket"
-                },
+        message: `
 
-                {
-                    text:
-                        "🏆 What certifications has Krishnendu completed?",
+            <p>
+                💼 Krishnendu completed a
+                <strong style="color: var(--main-color);">
+                    ${internship.durationText}
+                </strong>
+                at
+                <strong style="color: var(--main-color);">
+                    ${internship.company}
+                </strong>.
+            </p>
 
-                    icon:
-                        "fas fa-certificate"
-                }
 
-            ]
+            <p>
+                <strong style="color: var(--main-color);">
+                    Role:
+                </strong>
+                <br>
+                ${internship.role}
+            </p>
 
-        };
 
-    }
+            <p>
+                <strong style="color: var(--main-color);">
+                    Duration:
+                </strong>
+                <br>
+                ${internship.duration}
+            </p>
+
+
+            <p>
+                <strong style="color: var(--main-color);">
+                    Organization:
+                </strong>
+                <br>
+                ${internship.organization}
+            </p>
+
+
+            <p>
+                <strong style="color: var(--main-color);">
+                    Key Learning Areas:
+                </strong>
+                <br>
+
+                ${createList(
+                    internship.technologies,
+                    "•"
+                )}
+            </p>
+
+
+            <p>
+                <strong style="color: var(--main-color);">
+                    Certificate ID:
+                </strong>
+                ${internship.certificateId}
+            </p>
+
+
+            <div class="ai-project-links">
+
+                <a
+                    href="${internship.certificateUrl}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="ai-project-link"
+                >
+
+                    <i class="fas fa-award"></i>
+
+                    View Certificate
+
+                </a>
+
+            </div>
+
+        `,
+
+        options: [
+
+            {
+                text:
+                    "🧠 What did Krishnendu learn during his internship?",
+
+                icon:
+                    "fas fa-brain"
+            },
+
+
+            {
+                text:
+                    "🚀 What projects has Krishnendu built?",
+
+                icon:
+                    "fas fa-rocket"
+            },
+
+
+            {
+                text:
+                    "🏆 What certifications has Krishnendu completed?",
+
+                icon:
+                    "fas fa-certificate"
+            }
+
+        ]
+
+    };
+
+}
 
 
     /* =====================================================
