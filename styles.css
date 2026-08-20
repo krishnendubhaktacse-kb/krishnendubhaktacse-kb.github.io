@@ -554,20 +554,9 @@ span{
 }
 
 @media (max-width: 617px){
-    .portfolio-container{
-        grid-template-columns: 1fr;
-    }
-
-    .home-img img{
-        width: 80vw;
-        margin-top: 8rem;
-    }
-
-    .about-img img{
-        width: 100%;
-        max-width: 100%;
-        margin-top: 4rem;
-    }
+    .portfolio-container{ grid-template-columns: 1fr; }
+    .home-img img{ width: 80vw; margin-top: 8rem; }
+    .about-img img{ width: 100vw; margin-top: 4rem; }
 }
 
 @media (max-width: 450px){
@@ -1165,12 +1154,6 @@ span{
 
     .experience-header{
         align-items: flex-start;
-        min-width: 0;
-    }
-
-    .experience-title{
-        min-width: 0;
-        max-width: 100%;
     }
 
     .experience-icon{
@@ -1287,7 +1270,7 @@ span{
 
 .ai-assistant-button{
     position: fixed;
-    left: 2.5rem;
+    right: 2.5rem;
     bottom: 2.5rem;
 
     width: 6.5rem;
@@ -1362,7 +1345,7 @@ span{
 @media (max-width: 480px){
 
     .ai-assistant-button{
-        left: 1.5rem;
+        right: 1.5rem;
         bottom: 1.5rem;
 
         width: 5.8rem;
@@ -2097,68 +2080,64 @@ span{
 
 @media (max-width: 768px) {
     .footer {
+        position: relative;
+        display: flex;
         justify-content: center;
-        gap: 1.5rem;
+        align-items: center;
+        padding: 2rem 3%;
         text-align: center;
     }
 
+    .footer-text {
+        width: 100%;
+        text-align: center;
+        padding: 0 5rem;
+        line-height: 1.5;
+    }
+
     .footer-iconTop {
+        position: absolute;
+        left: 1.5rem;
+        top: 42%;
+        transform: translateY(-50%);
         margin: 0;
+        padding: .8rem 1rem;
+    }
+
+    .footer-iconTop a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
-
-/* Prevent mobile horizontal overflow */
-@media (max-width: 768px) {
-    .home-content,
-    .about-content,
-    .about-main,
-    .experience-card,
-    .experience-header,
-    .experience-title,
-    .project-card,
-    .project-content,
-    .certificates-box,
-    .skill-category {
-        min-width: 0;
-        max-width: 100%;
-    }
-}
-
-/* ================================
-   Mobile Horizontal Overflow Fix
-================================ */
 
 @media (max-width: 480px) {
-
-    html,
-    body {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
-    section {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .header,
     .footer {
-        width: 100%;
-        max-width: 100%;
+        padding: 1.5rem 1.5rem;
     }
 
-    .portfolio-container,
-    .projects-grid,
-    .certificates-container,
-    .stats-container,
-    .skills-container,
-    .experience-container {
+    .footer-text {
         width: 100%;
-        max-width: 100%;
+        padding: 0 4.5rem;
+        font-size: 1.4rem;
+        line-height: 1.5;
     }
 
-    img {
-        max-width: 100%;
+    .footer-iconTop {
+        left: 1rem;
+        top: 42%;
+        transform: translateY(-50%);
+    }
+
+    .footer-iconTop a {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-iconTop a i {
+        font-size: 2rem;
     }
 }
