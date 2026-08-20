@@ -554,9 +554,20 @@ span{
 }
 
 @media (max-width: 617px){
-    .portfolio-container{ grid-template-columns: 1fr; }
-    .home-img img{ width: 80vw; margin-top: 8rem; }
-    .about-img img{ width: 100vw; margin-top: 4rem; }
+    .portfolio-container{
+        grid-template-columns: 1fr;
+    }
+
+    .home-img img{
+        width: 80vw;
+        margin-top: 8rem;
+    }
+
+    .about-img img{
+        width: 100%;
+        max-width: 100%;
+        margin-top: 4rem;
+    }
 }
 
 @media (max-width: 450px){
