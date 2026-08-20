@@ -1165,6 +1165,12 @@ span{
 
     .experience-header{
         align-items: flex-start;
+        min-width: 0;
+    }
+
+    .experience-title{
+        min-width: 0;
+        max-width: 100%;
     }
 
     .experience-icon{
@@ -2098,5 +2104,22 @@ span{
 
     .footer-iconTop {
         margin: 0;
+    }
+}
+
+/* Prevent mobile horizontal overflow */
+@media (max-width: 768px) {
+    .home-content,
+    .about-content,
+    .about-main,
+    .experience-card,
+    .experience-header,
+    .experience-title,
+    .project-card,
+    .project-content,
+    .certificates-box,
+    .skill-category {
+        min-width: 0;
+        max-width: 100%;
     }
 }
