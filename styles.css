@@ -2123,3 +2123,42 @@ span{
         max-width: 100%;
     }
 }
+
+/* ================================
+   Mobile Horizontal Overflow Fix
+================================ */
+
+@media (max-width: 480px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    section {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .header,
+    .footer {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .portfolio-container,
+    .projects-grid,
+    .certificates-container,
+    .stats-container,
+    .skills-container,
+    .experience-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
