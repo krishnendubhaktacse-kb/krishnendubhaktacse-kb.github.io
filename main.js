@@ -412,6 +412,86 @@ const portfolioKnowledge = {
 
     projects: {
 
+        
+        kibo: {
+
+            id: "kibo",
+
+            name:
+                "KIBO – Knowledge Intelligence & Business Operations",
+
+            icon:
+                "🚀",
+
+            aliases: [
+                "kibo",
+                "kibo project",
+                "knowledge intelligence",
+                "business operations",
+                "kibo system",
+                "customer support system",
+                "real time customer support",
+                "real-time customer support",
+                "ai customer support",
+                "ai powered customer support",
+                "customer support chatbot",
+                "rag knowledge system",
+                "kibo knowledge base"
+            ],
+
+            description:
+                "KIBO is a real-time AI-powered customer support system that provides intelligent conversations using Retrieval-Augmented Generation (RAG), document-based knowledge retrieval, automated support workflows, voice assistance, and seamless human handoff.",
+
+            technologies: [
+
+                "Next.js",
+                "React",
+                "TypeScript",
+                "Convex",
+                "Google Gemini AI",
+                "RAG",
+                "Clerk",
+                "VAPI",
+                "AWS Secrets Manager",
+                "Sentry"
+
+            ],
+
+            features: [
+
+                "Real-Time AI Chat Support",
+                "RAG-Based Knowledge Retrieval",
+                "Document-Based AI Search",
+                "AI Tool Calling",
+                "Automated Support Workflows",
+                "Human Handoff and Escalation",
+                "Voice Support Integration",
+                "Embeddable Chat Widget",
+                "Operator Dashboard",
+                "Organization and Team Management"
+
+            ],
+
+            problemsSolved: [
+
+                "Helps businesses provide real-time AI-powered customer support",
+                "Retrieves relevant answers from an organization's knowledge base",
+                "Reduces repetitive manual support tasks through automation",
+                "Supports escalation to human operators when required",
+                "Combines text-based and voice-based customer support"
+
+            ],
+
+            github:
+                "https://github.com/krishnendubhaktacse-kb/kibo",
+
+            liveDemo:
+                "https://kibo-kb-web.vercel.app"
+
+        },
+
+
+
         aiSkinSpecialist: {
 
             id: "aiSkinSpecialist",
@@ -2694,7 +2774,7 @@ if (
             <p>
                 For example:
                 <strong>
-                    "Can you tell me about AI Skin Specialist?"
+                    "Can you tell me about KIBO?"
                 </strong>
             </p>
 
@@ -3081,6 +3161,15 @@ function initializeAIOptions() {
 
 
     addAIOptions([
+
+        
+        {
+            text:
+                "🚀 Can you tell me about KIBO?",
+
+            icon:
+                "fas fa-headset"
+        },
 
         {
             text:
